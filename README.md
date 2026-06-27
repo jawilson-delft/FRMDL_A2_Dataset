@@ -46,18 +46,28 @@ python train.py
 python evaluate.py
 ```
 
+## Script organization
+
+- Script implementations are organized under `scripts/`:
+  - `scripts/data/` — dataset generation and verification
+  - `scripts/training/` — training and sweep runners
+  - `scripts/evaluation/` — evaluation
+  - `scripts/validation/` — kink validation
+  - `scripts/analysis/{audit,diagnostics,comparison}/` — analysis utilities
+- Root-level script names are kept as backward-compatible entrypoints (for example `python train.py`, `python evaluate.py`, `python generate_dataset.py`).
+
 ## Files
 
 | File | Purpose |
 |------|---------|
 | `geometry.py` | Wedge polygon construction, rasterization, FMM solver |
-| `generate_dataset.py` | Dataset generation with train/test splits |
-| `verify_dataset.py` | Pre-training checks (resolution, θ scale, train/test separation) |
+| `scripts/data/generate_dataset.py` | Dataset generation with train/test splits |
+| `scripts/data/verify_dataset.py` | Pre-training checks (resolution, θ scale, train/test separation) |
 | `kink_utils.py` | Near-kink region masks for kink-weighted loss |
-| `validate_kink_severity.py` | Sanity check: gradient jump vs θ |
+| `scripts/validation/validate_kink_severity.py` | Sanity check: gradient jump vs θ |
 | `model_fno.py` | Standard FNO2d (Li et al. 2021 style) |
-| `train.py` | Training loop, kink-weighted relative L2 loss |
-| `evaluate.py` | (θ, resolution) error grid + core plot + qualitative 512² examples |
+| `scripts/training/train.py` | Training loop, kink-weighted relative L2 loss |
+| `scripts/evaluation/evaluate.py` | (θ, resolution) error grid + core plot + qualitative 512² examples |
 
 ## Outputs
 
