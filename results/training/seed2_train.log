@@ -1,0 +1,31 @@
+=== Training seed=4242 run_label=seed2 ===
+Device: cuda
+Training samples: 5355 | Validation samples: 945 (64×64)
+Split file: /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/val_split.npz (seed=42, val_fraction=0.15)
+--- Kink-weighted loss ---
+  lambda_kink:              100.0
+  kink_radius_frac:         0.05 (0.0707 abs, 5.0% diagonal)
+  mean kink free-pixel frac: 0.00569 (train set)
+  loss = whole_relL2 + lambda_kink * near_kink_relL2
+  effective kink term weight ≈ lambda * frac = 0.569 (vs 1.0 for whole-domain term at unit loss)
+--- Model capacity ---
+  width=32  modes=12  n_layers=4
+  trainable parameters (this run): 1,204,001
+  trainable parameters (baseline): 1,204,001  (width=32, modes=12, n_layers=4)
+  capacity ratio vs baseline: 1.000
+--- Optimizer ---
+  Adam  lr=1.000000e-03  weight_decay=0.000000e+00
+--- Learning rate schedule ---
+  Initial LR:           1.000000e-03
+  Decay gamma:          0.95
+  Decay every:          1675 steps (~5 epochs, 335 steps/epoch)
+  Expected decay events over 200 epochs: 40
+  Estimated final LR:   1.285122e-04
+  LR after completing milestone epochs (computed):
+    epoch 100: 3.584859e-04  (0.3585× initial)
+    epoch 200: 1.285122e-04  (0.1285× initial)
+Epoch    1/200  train whole=0.5481 kink=0.4918 total=49.7308  val whole=0.4775 kink=0.4692 total=47.3938
+Epoch   20/200  train whole=0.4468 kink=0.3997 total=40.4208  val whole=0.4490 kink=0.4757 total=48.0234
+Epoch   40/200  train whole=0.4260 kink=0.1338 total=13.8030  val whole=0.4326 kink=0.5904 total=59.4751
+Epoch   60/200  train whole=0.4236 kink=0.0690 total=7.3205  val whole=0.4274 kink=0.5895 total=59.3756
+Epoch   80/200  train whole=0.4181 kink=0.0465 total=5.0634  val whole=0.4238 kink=0.5890 total=59.3270

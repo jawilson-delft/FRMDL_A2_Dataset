@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+# Checkpoints: keep reported + extended_run only; exclude sweep/smoke artifacts
+checkpoints/lambda_*/
+checkpoints/fno_eikonal.pt
+checkpoints/fno_best_val.pt
+checkpoints/fno_final_200ep.pt
+checkpoints/fno_final_200ep_history.json
+checkpoints/train_history.json
+# Diagnosis scratch reconstructions
+results/diagnosis/_recon_*.png
+results/diagnosis/_exact_old_*.png

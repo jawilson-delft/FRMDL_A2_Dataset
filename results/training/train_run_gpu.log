@@ -1,0 +1,18 @@
+/home/jordan/.local/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Device: cpu
+Training samples: 2100 (all θ mixed, 64×64)
+Validation split: none (full training set used)
+Epoch    1/200  train rel-L2 = 0.450204
+Device: cuda
+Training samples: 2100 (all θ mixed, 64×64)
+Validation split: none (full training set used)
+Epoch    1/200  train rel-L2 = 0.435755
+Epoch   20/200  train rel-L2 = 0.360026
+Epoch   40/200  train rel-L2 = 0.099817
+Epoch   60/200  train rel-L2 = 0.062873
+Epoch   80/200  train rel-L2 = 0.033225
+Epoch  100/200  train rel-L2 = 0.030124
+Epoch  120/200  train rel-L2 = 0.028575
+Epoch   20/200  train rel-L2 = 0.335708
+Epoch  140/200  train rel-L2 = 0.016152

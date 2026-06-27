@@ -1,0 +1,12 @@
+Device: cuda
+Training samples: 5355 | Validation samples: 945 (64×64)
+Split file: /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/val_split.npz (seed=42, val_fraction=0.15)
+--- Learning rate schedule ---
+  Initial LR:           1.000000e-03
+  Decay gamma:          0.95
+  Decay every:          1675 steps (~5 epochs, 335 steps/epoch)
+  Expected decay events over 200 epochs: 40
+  Estimated final LR:   1.285122e-04
+Epoch    1/200  train rel-L2 = 0.410776  val rel-L2 = 0.388749
+Epoch   20/200  train rel-L2 = 0.278841  val rel-L2 = 0.434930
+Epoch   40/200  train rel-L2 = 0.083369  val rel-L2 = 0.455976

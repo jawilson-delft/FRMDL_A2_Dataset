@@ -1,0 +1,158 @@
+{
+  "check_a": {
+    "composition": [
+      {
+        "theta": 180,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 150,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 120,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 90,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 60,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 30,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      },
+      {
+        "theta": 10,
+        "n_train": 765,
+        "n_val": 135,
+        "val_fraction": 0.15
+      }
+    ],
+    "train_v_stats": {
+      "180": {
+        "n": 765,
+        "mean_v": 0.4959236221765381,
+        "std_v": 0.22445954370732402
+      },
+      "150": {
+        "n": 765,
+        "mean_v": 0.49898149698388344,
+        "std_v": 0.22638932908672132
+      },
+      "120": {
+        "n": 765,
+        "mean_v": 0.49151172957389183,
+        "std_v": 0.22243899453699198
+      },
+      "90": {
+        "n": 765,
+        "mean_v": 0.4970780071479822,
+        "std_v": 0.22523673326750987
+      },
+      "60": {
+        "n": 765,
+        "mean_v": 0.497128334076576,
+        "std_v": 0.22526969307777928
+      },
+      "30": {
+        "n": 765,
+        "mean_v": 0.5006497853721669,
+        "std_v": 0.226920355807722
+      },
+      "10": {
+        "n": 765,
+        "mean_v": 0.4949464741485571,
+        "std_v": 0.22391456587641848
+      }
+    },
+    "val_v_stats": {
+      "180": {
+        "n": 135,
+        "mean_v": 0.48922614985042145,
+        "std_v": 0.22163317026915375
+      },
+      "150": {
+        "n": 135,
+        "mean_v": 0.49423861613980047,
+        "std_v": 0.22271225529688377
+      },
+      "120": {
+        "n": 135,
+        "mean_v": 0.5007450702013793,
+        "std_v": 0.2258101499742932
+      },
+      "90": {
+        "n": 135,
+        "mean_v": 0.4894797247868997,
+        "std_v": 0.22222618107442502
+      },
+      "60": {
+        "n": 135,
+        "mean_v": 0.5015461369797035,
+        "std_v": 0.22721194117157548
+      },
+      "30": {
+        "n": 135,
+        "mean_v": 0.5000180566752398,
+        "std_v": 0.22752145263883802
+      },
+      "10": {
+        "n": 135,
+        "mean_v": 0.49971240913426435,
+        "std_v": 0.2278310203993762
+      }
+    },
+    "flags": [],
+    "plot": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/results/diagnosis/check_a_mean_v_train_vs_val.png"
+  },
+  "check_b": {
+    "status": "PASS",
+    "findings": [
+      "FNO2d (model_fno.py): no nn.Dropout or nn.BatchNorm layers \u2014 model.train() vs model.eval() should not change forward outputs.",
+      "train.py::_eval_loader (lines 89\u2013100): decorated with @torch.no_grad().",
+      "train.py::_eval_loader line 91: model.eval() called before val loop.",
+      "train.py: relative_l2_loss(pred, target) used in both _eval_loader (line 98) and training loop (line 202) \u2014 identical function.",
+      "train.py: prepare_input(occ) applied in both train (line 200) and val (line 97) paths.",
+      "train.py line 194: model.train() at start of each epoch (restores after _eval_loader).",
+      "model_fno.py::relative_l2_loss (lines 130\u2013136): per-sample ||pred-target||_2 / ||target||_2, then mean over batch. Includes ALL pixels (obstacle pixels have target=0).",
+      "model_fno.py::prepare_input (lines 121\u2013127): concatenates occupancy with fixed [0,1] grid \u2014 no data-dependent normalization.",
+      "No running statistics or train-only normalization in train.py or model_fno.py.",
+      "Both train and val epoch metrics average per-batch relative_l2_loss values (mean of batch means). Same aggregation for both \u2014 not a train/val asymmetry."
+    ],
+    "issues": []
+  },
+  "check_c": {
+    "checkpoint": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/checkpoints/fno_best_val.pt",
+    "best_epoch": 6,
+    "sample_indices": [
+      2687,
+      3642,
+      4169,
+      5553,
+      6198
+    ],
+    "descriptions": [
+      "Sample 0 (\u03b8=180\u00b0, idx=2687): rel-L2=0.2814. GT V range [0.000, 0.831] (free-space mean 0.404). Pred range [-0.015, 0.732] (free-space mean 0.466), pred std=0.1121, range=0.746. Prediction shows spatial variation with a plausible value-function-like structure (higher away from goal, lower near goal/obstacles) but with visible inaccuracy vs ground truth. ",
+      "Sample 1 (\u03b8=120\u00b0, idx=3642): rel-L2=0.4159. GT V range [0.000, 1.035] (free-space mean 0.516). Pred range [0.000, 0.740] (free-space mean 0.463), pred std=0.1157, range=0.740. Prediction shows spatial variation with a plausible value-function-like structure (higher away from goal, lower near goal/obstacles) but with visible inaccuracy vs ground truth. ",
+      "Sample 2 (\u03b8=90\u00b0, idx=4169): rel-L2=0.3593. GT V range [0.000, 0.955] (free-space mean 0.457). Pred range [-0.000, 0.744] (free-space mean 0.463), pred std=0.1122, range=0.744. Prediction shows spatial variation with a plausible value-function-like structure (higher away from goal, lower near goal/obstacles) but with visible inaccuracy vs ground truth. ",
+      "Sample 3 (\u03b8=30\u00b0, idx=5553): rel-L2=0.3197. GT V range [0.000, 0.878] (free-space mean 0.421). Pred range [-0.014, 0.736] (free-space mean 0.468), pred std=0.1161, range=0.750. Prediction shows spatial variation with a plausible value-function-like structure (higher away from goal, lower near goal/obstacles) but with visible inaccuracy vs ground truth. ",
+      "Sample 4 (\u03b8=10\u00b0, idx=6198): rel-L2=0.4070. GT V range [0.000, 1.079] (free-space mean 0.507). Pred range [-0.003, 0.744] (free-space mean 0.463), pred std=0.1116, range=0.747. Prediction shows spatial variation with a plausible value-function-like structure (higher away from goal, lower near goal/obstacles) but with visible inaccuracy vs ground truth. "
+    ]
+  }
+}

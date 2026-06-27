@@ -1,0 +1,11 @@
+Device: cuda
+Training samples: 1785 | Validation samples: 315 (64×64)
+Split file: /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/val_split.npz (seed=42, val_fraction=0.15)
+Epoch    1/200  train rel-L2 = 0.432420  val rel-L2 = 0.385824
+Epoch   20/200  train rel-L2 = 0.314350  val rel-L2 = 0.416394
+Epoch   40/200  train rel-L2 = 0.087479  val rel-L2 = 0.442805
+Epoch   60/200  train rel-L2 = 0.058366  val rel-L2 = 0.437227
+Epoch   80/200  train rel-L2 = 0.031810  val rel-L2 = 0.434200
+Epoch  100/200  train rel-L2 = 0.030122  val rel-L2 = 0.430863
+Epoch  120/200  train rel-L2 = 0.028505  val rel-L2 = 0.429196
+Epoch  140/200  train rel-L2 = 0.015911  val rel-L2 = 0.429942

@@ -1,0 +1,204 @@
+{
+  "seed": 42,
+  "theta_values": [
+    180,
+    150,
+    120,
+    90,
+    60,
+    30,
+    10
+  ],
+  "train_resolution": 64,
+  "test_resolutions": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "train_per_theta": 900,
+  "test_per_cell": 50,
+  "train": {
+    "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/train_64.npz",
+    "n_samples": 6300,
+    "resolution": 64
+  },
+  "test_buckets": {
+    "theta_180_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_180/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 180,
+      "resolution": 64
+    },
+    "theta_180_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_180/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 180,
+      "resolution": 128
+    },
+    "theta_180_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_180/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 180,
+      "resolution": 256
+    },
+    "theta_180_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_180/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 180,
+      "resolution": 512
+    },
+    "theta_150_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_150/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 150,
+      "resolution": 64
+    },
+    "theta_150_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_150/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 150,
+      "resolution": 128
+    },
+    "theta_150_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_150/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 150,
+      "resolution": 256
+    },
+    "theta_150_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_150/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 150,
+      "resolution": 512
+    },
+    "theta_120_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_120/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 120,
+      "resolution": 64
+    },
+    "theta_120_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_120/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 120,
+      "resolution": 128
+    },
+    "theta_120_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_120/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 120,
+      "resolution": 256
+    },
+    "theta_120_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_120/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 120,
+      "resolution": 512
+    },
+    "theta_90_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_90/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 90,
+      "resolution": 64
+    },
+    "theta_90_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_90/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 90,
+      "resolution": 128
+    },
+    "theta_90_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_90/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 90,
+      "resolution": 256
+    },
+    "theta_90_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_90/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 90,
+      "resolution": 512
+    },
+    "theta_60_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_60/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 60,
+      "resolution": 64
+    },
+    "theta_60_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_60/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 60,
+      "resolution": 128
+    },
+    "theta_60_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_60/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 60,
+      "resolution": 256
+    },
+    "theta_60_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_60/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 60,
+      "resolution": 512
+    },
+    "theta_30_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_30/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 30,
+      "resolution": 64
+    },
+    "theta_30_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_30/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 30,
+      "resolution": 128
+    },
+    "theta_30_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_30/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 30,
+      "resolution": 256
+    },
+    "theta_30_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_30/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 30,
+      "resolution": 512
+    },
+    "theta_10_res_64": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_10/res_64/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 10,
+      "resolution": 64
+    },
+    "theta_10_res_128": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_10/res_128/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 10,
+      "resolution": 128
+    },
+    "theta_10_res_256": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_10/res_256/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 10,
+      "resolution": 256
+    },
+    "theta_10_res_512": {
+      "path": "/home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/test/theta_10/res_512/samples.npz",
+      "n_samples": 50,
+      "theta_deg": 10,
+      "resolution": 512
+    }
+  },
+  "n_unique_param_keys": 3500,
+  "n_unique_full_keys": 3500,
+  "train_expansion": {
+    "expansion_seed": 3542,
+    "original_seed": 42,
+    "n_added": 4200,
+    "val_split_seed": 42
+  }
+}

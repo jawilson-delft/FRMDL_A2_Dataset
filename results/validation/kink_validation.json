@@ -1,0 +1,595 @@
+{
+  "theta_values": [
+    180,
+    150,
+    120,
+    90,
+    60,
+    30,
+    10
+  ],
+  "mean_gradient_jump": {
+    "180": 0.0,
+    "150": 75.21211726232792,
+    "120": 76.04936426556948,
+    "90": 71.12785345315102,
+    "60": 79.71420330363271,
+    "30": 53.9782077950353,
+    "10": 73.11298314057325
+  },
+  "std_gradient_jump": {
+    "180": 0.0,
+    "150": 39.80646647111672,
+    "120": 47.139984058793175,
+    "90": 28.61081325540884,
+    "60": 41.28595797415107,
+    "30": 30.77761172076463,
+    "10": 33.37249753100894
+  },
+  "theta_180_baseline_jump": 0.0,
+  "notched_mean_gradient_jump": 71.53245487004828,
+  "pearson_corr_severity_jump": 0.4991197896546859,
+  "monotonic_in_severity": false,
+  "records": [
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 1.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 0.0,
+      "theta_deg": 180
+    },
+    {
+      "gradient_jump": 28.910913667288558,
+      "grad_peak": 27.92495747771513,
+      "grad_direction_spread": 0.3167634569732739,
+      "kink_severity_score": 56.78616151592351,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 49.85846880329241,
+      "grad_peak": 61.53003881139897,
+      "grad_direction_spread": 0.10915616055423805,
+      "kink_severity_score": 110.7159760963541,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 176.17599975241694,
+      "grad_peak": 99.69829793562431,
+      "grad_direction_spread": 0.7264558913028103,
+      "kink_severity_score": 277.0536653619497,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 71.79529441419378,
+      "grad_peak": 48.35894820072548,
+      "grad_direction_spread": 0.8653939135668478,
+      "kink_severity_score": 121.7504243556198,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 89.69136228825232,
+      "grad_peak": 81.68331365298465,
+      "grad_direction_spread": 0.4442338114609984,
+      "kink_severity_score": 171.70737737561996,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 68.39804492992421,
+      "grad_peak": 46.01674814060938,
+      "grad_direction_spread": 0.5168104307654382,
+      "kink_severity_score": 114.9652243628299,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 33.950853291905794,
+      "grad_peak": 20.834362203339733,
+      "grad_direction_spread": 0.4204559000070397,
+      "kink_severity_score": 55.04658319526665,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 101.49604702570524,
+      "grad_peak": 69.77719650755604,
+      "grad_direction_spread": 0.35119716080681906,
+      "kink_severity_score": 171.32683501568175,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 69.89276773238599,
+      "grad_peak": 47.28793726356763,
+      "grad_direction_spread": 0.8266167364217859,
+      "kink_severity_score": 118.66055520521897,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 61.95142071791397,
+      "grad_peak": 44.10428019498897,
+      "grad_direction_spread": 0.3979312946429766,
+      "kink_severity_score": 106.24949479683187,
+      "kink_severity": 30.0,
+      "theta_deg": 150
+    },
+    {
+      "gradient_jump": 58.86331464267908,
+      "grad_peak": 41.853254117702555,
+      "grad_direction_spread": 0.3060072342301834,
+      "kink_severity_score": 100.63459046307219,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 97.25205276562829,
+      "grad_peak": 91.68054817219543,
+      "grad_direction_spread": 0.20660715337775093,
+      "kink_severity_score": 188.55242239795697,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 20.369889026728792,
+      "grad_peak": 14.881995393398462,
+      "grad_direction_spread": 0.4014880004928526,
+      "kink_severity_score": 35.45634842160581,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 187.05505102983506,
+      "grad_peak": 122.33710337380954,
+      "grad_direction_spread": 0.36873457095507034,
+      "kink_severity_score": 309.4983581165098,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 95.91115512741393,
+      "grad_peak": 59.66677829802632,
+      "grad_direction_spread": 0.44267626843675445,
+      "kink_severity_score": 155.9059622307505,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 23.91909353687071,
+      "grad_peak": 16.416196237468053,
+      "grad_direction_spread": 0.33023217760714174,
+      "kink_severity_score": 40.32598630716019,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 110.73520457676582,
+      "grad_peak": 77.18344829351335,
+      "grad_direction_spread": 0.45141277085992115,
+      "kink_severity_score": 188.27289118285893,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 40.97022940412826,
+      "grad_peak": 24.606662976737034,
+      "grad_direction_spread": 0.4476438691192691,
+      "kink_severity_score": 65.9198239882231,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 71.4481403592629,
+      "grad_peak": 51.408745149114864,
+      "grad_direction_spread": 0.30655588601101036,
+      "kink_severity_score": 122.77655316641079,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 53.969512186381834,
+      "grad_peak": 40.21199164533224,
+      "grad_direction_spread": 0.388302059349794,
+      "kink_severity_score": 94.34641000976346,
+      "kink_severity": 60.0,
+      "theta_deg": 120
+    },
+    {
+      "gradient_jump": 60.96309760857001,
+      "grad_peak": 57.70278994298778,
+      "grad_direction_spread": 0.1601551536043273,
+      "kink_severity_score": 118.14635301237077,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 24.860729830712536,
+      "grad_peak": 18.863161875635264,
+      "grad_direction_spread": 0.2679844772451754,
+      "kink_severity_score": 43.52784513808332,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 43.923701795100676,
+      "grad_peak": 33.33580278072079,
+      "grad_direction_spread": 0.26475737599870164,
+      "kink_severity_score": 77.05377670381756,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 75.60431452543769,
+      "grad_peak": 75.18404661818109,
+      "grad_direction_spread": 0.4590758284117886,
+      "kink_severity_score": 151.16558862885415,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 97.13010786694902,
+      "grad_peak": 68.84819660814897,
+      "grad_direction_spread": 0.29835814208535716,
+      "kink_severity_score": 165.87337890135404,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 118.8764005541308,
+      "grad_peak": 82.22034765542342,
+      "grad_direction_spread": 0.3420806895366516,
+      "kink_severity_score": 201.1229902781642,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 94.92802291143714,
+      "grad_peak": 79.92802309755622,
+      "grad_direction_spread": 0.22488484173622425,
+      "kink_severity_score": 174.53070053420203,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 93.92490883067272,
+      "grad_peak": 69.82101220002443,
+      "grad_direction_spread": 0.2895418626819627,
+      "kink_severity_score": 163.61454661874302,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 62.601631341654134,
+      "grad_peak": 45.048592232357336,
+      "grad_direction_spread": 0.2964606679717785,
+      "kink_severity_score": 107.5396055779268,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 38.465619266845515,
+      "grad_peak": 46.187742607197656,
+      "grad_direction_spread": 0.11236804198551142,
+      "kink_severity_score": 83.99046599999971,
+      "kink_severity": 90.0,
+      "theta_deg": 90
+    },
+    {
+      "gradient_jump": 63.038521750599614,
+      "grad_peak": 51.008039817917314,
+      "grad_direction_spread": 0.24119573341595757,
+      "kink_severity_score": 113.7701487687648,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 105.95672452029255,
+      "grad_peak": 84.66501389975066,
+      "grad_direction_spread": 0.24338286271579912,
+      "kink_severity_score": 190.3518870081906,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 39.42850362457413,
+      "grad_peak": 37.24956592094718,
+      "grad_direction_spread": 0.18191969062211288,
+      "kink_severity_score": 76.22382861738764,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 165.72369925419858,
+      "grad_peak": 124.1293110631791,
+      "grad_direction_spread": 0.28146333805407053,
+      "kink_severity_score": 289.6974003315399,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 41.43009269982335,
+      "grad_peak": 58.44377377613921,
+      "grad_direction_spread": 0.07484120335529432,
+      "kink_severity_score": 99.09839008602845,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 124.26745399511196,
+      "grad_peak": 115.45806483728789,
+      "grad_direction_spread": 0.1865055937737291,
+      "kink_severity_score": 239.28503561372105,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 90.59102589305532,
+      "grad_peak": 104.22174809187993,
+      "grad_direction_spread": 0.11354189782386215,
+      "kink_severity_score": 194.15339967840683,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 26.251076253714174,
+      "grad_peak": 28.002203880315427,
+      "grad_direction_spread": 0.14387147916200094,
+      "kink_severity_score": 53.684894571515606,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 85.23931590973753,
+      "grad_peak": 93.45011595881705,
+      "grad_direction_spread": 0.13952108516334927,
+      "kink_severity_score": 178.10799512404463,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 55.215619135219875,
+      "grad_peak": 62.70857213770054,
+      "grad_direction_spread": 0.12076878429951099,
+      "kink_severity_score": 117.28649762581895,
+      "kink_severity": 120.0,
+      "theta_deg": 60
+    },
+    {
+      "gradient_jump": 38.22502543262777,
+      "grad_peak": 42.54950289721034,
+      "grad_direction_spread": 0.11777155874474654,
+      "kink_severity_score": 80.12784300607234,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 75.72090922760998,
+      "grad_peak": 81.43722026094575,
+      "grad_direction_spread": 0.1347141220020307,
+      "kink_severity_score": 156.56227185456183,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 90.51252784735489,
+      "grad_peak": 127.13693704912089,
+      "grad_direction_spread": 0.07641305051777725,
+      "kink_severity_score": 216.8787040480291,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 75.78263783350228,
+      "grad_peak": 92.59547546259923,
+      "grad_direction_spread": 0.10373458958598047,
+      "kink_severity_score": 167.68931706485944,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 0.0,
+      "grad_peak": 0.0,
+      "grad_direction_spread": 0.0,
+      "kink_severity_score": 0.0,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 54.73968517354303,
+      "grad_peak": 40.98179828128231,
+      "grad_direction_spread": 0.26683547935644625,
+      "kink_severity_score": 95.52198989289468,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 38.21112019620662,
+      "grad_peak": 28.110379361197246,
+      "grad_direction_spread": 0.2904026820102069,
+      "kink_severity_score": 66.19270760343449,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 50.53563562388391,
+      "grad_peak": 56.61607971639822,
+      "grad_direction_spread": 0.12045798700880828,
+      "kink_severity_score": 106.51308930130855,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 101.2363379581035,
+      "grad_peak": 75.22820215793658,
+      "grad_direction_spread": 0.26585115846464724,
+      "kink_severity_score": 176.26209359143402,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 14.818198657521076,
+      "grad_peak": 19.927277212883695,
+      "grad_direction_spread": 0.08450170374728028,
+      "kink_severity_score": 33.99898098164661,
+      "kink_severity": 150.0,
+      "theta_deg": 30
+    },
+    {
+      "gradient_jump": 84.64808881517511,
+      "grad_peak": 84.21868591267622,
+      "grad_direction_spread": 0.14610715594124213,
+      "kink_severity_score": 168.30509619567505,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 43.46846170623294,
+      "grad_peak": 50.049984525114894,
+      "grad_direction_spread": 0.09976107697663139,
+      "kink_severity_score": 92.81772946227773,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 84.58847712421394,
+      "grad_peak": 84.19097007105346,
+      "grad_direction_spread": 0.15128907827378746,
+      "kink_severity_score": 168.23331443008874,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 105.9942981954702,
+      "grad_peak": 75.57096579241275,
+      "grad_direction_spread": 0.2875931875577026,
+      "kink_severity_score": 181.42804355055605,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 109.6475261902391,
+      "grad_peak": 85.1871200513,
+      "grad_direction_spread": 0.2380157273567538,
+      "kink_severity_score": 194.54869342360936,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 46.54937220914991,
+      "grad_peak": 37.85450887265548,
+      "grad_direction_spread": 0.21604109943662697,
+      "kink_severity_score": 84.05200438011528,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 52.29192126449611,
+      "grad_peak": 41.22721325303333,
+      "grad_direction_spread": 0.23403875236933236,
+      "kink_severity_score": 93.22125077463744,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 114.6311366953721,
+      "grad_peak": 93.55112316111652,
+      "grad_direction_spread": 0.23902972934207356,
+      "kink_severity_score": 207.89934904451485,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 5.3159974461177715,
+      "grad_peak": 117.23028706895033,
+      "grad_direction_spread": 0.00016872009767376905,
+      "kink_severity_score": 121.54679067536114,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    },
+    {
+      "gradient_jump": 83.99455175926536,
+      "grad_peak": 117.8092722574658,
+      "grad_direction_spread": 0.07671270880667591,
+      "kink_severity_score": 201.0339621431512,
+      "kink_severity": 170.0,
+      "theta_deg": 10
+    }
+  ]
+}

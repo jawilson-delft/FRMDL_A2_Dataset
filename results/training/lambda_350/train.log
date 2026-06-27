@@ -1,0 +1,43 @@
+=== Starting lambda_kink=350 (Fri Jun 26 10:15:56 PM CEST 2026) ===
+Device: cuda
+Training samples: 5355 | Validation samples: 945 (64×64)
+Split file: /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/val_split.npz (seed=42, val_fraction=0.15)
+--- Kink-weighted loss ---
+  lambda_kink:              350.0
+  kink_radius_frac:         0.05 (0.0707 abs, 5.0% diagonal)
+  mean kink free-pixel frac: 0.00569 (train set)
+  loss = whole_relL2 + lambda_kink * near_kink_relL2
+  effective kink term weight ≈ lambda * frac = 1.990 (vs 1.0 for whole-domain term at unit loss)
+--- Learning rate schedule ---
+  Initial LR:           1.000000e-03
+  Decay gamma:          0.95
+  Decay every:          1675 steps (~5 epochs, 335 steps/epoch)
+  Expected decay events over 200 epochs: 40
+  Estimated final LR:   1.285122e-04
+Epoch    1/200  train whole=0.5712 kink=0.5033 total=176.7254  val whole=0.5491 kink=0.4591 total=161.2510
+Epoch   20/200  train whole=0.4979 kink=0.3021 total=106.2200  val whole=0.5089 kink=0.5179 total=181.7742
+Epoch   40/200  train whole=0.4493 kink=0.0911 total=32.3469  val whole=0.4512 kink=0.5824 total=204.2852
+Epoch   60/200  train whole=0.4404 kink=0.0549 total=19.6592  val whole=0.4438 kink=0.5827 total=204.3911
+Epoch   80/200  train whole=0.4352 kink=0.0396 total=14.2961  val whole=0.4398 kink=0.5731 total=201.0132
+Epoch  100/200  train whole=0.4315 kink=0.0303 total=11.0463  val whole=0.4361 kink=0.5864 total=205.6934
+Epoch  120/200  train whole=0.4287 kink=0.0239 total=8.7907  val whole=0.4332 kink=0.5817 total=204.0321
+Epoch  140/200  train whole=0.4273 kink=0.0190 total=7.0852  val whole=0.4323 kink=0.5797 total=203.3259
+Epoch  160/200  train whole=0.4259 kink=0.0153 total=5.7926  val whole=0.4298 kink=0.5765 total=202.1931
+Epoch  180/200  train whole=0.4251 kink=0.0126 total=4.8483  val whole=0.4292 kink=0.5779 total=202.7020
+Epoch  200/200  train whole=0.4242 kink=0.0104 total=4.0577  val whole=0.4279 kink=0.5756 total=201.8884
+Saved final checkpoint to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/checkpoints/lambda_350/fno_final_200ep.pt
+Saved best combined-val checkpoint to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/checkpoints/lambda_350/fno_best_val.pt
+Best combined and best kink checkpoints coincide at epoch 7
+Saved loss log to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/results/training/lambda_350/loss_log.csv
+Saved loss curve to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/results/training/lambda_350/loss_curve.png
+--- Training summary ---
+lambda_kink used: 350.0  (effective weight ≈ 1.990)
+Final train whole / kink / total:  0.424183 / 0.010381 / 4.057667
+Final val whole / kink / total:    0.427946 / 0.575601 / 201.888430
+Best val combined: 157.390702 (epoch 7)
+Best val kink:     0.448276 (epoch 7)
+Train kink loss epoch 1 → 200: 0.503298 → 0.010381 (decreasing)
+Final learning rate: 1.285122e-04  (40 decay events)
+Best validation combined total epoch (7) is 193 epochs before the final epoch (200) — validation likely worsened well before training ended.
+Best validation kink-only epoch (7) is 193 epochs before the final epoch (200) — validation likely worsened well before training ended.
+=== Finished lambda_kink=350 (Fri Jun 26 10:55:00 PM CEST 2026) ===

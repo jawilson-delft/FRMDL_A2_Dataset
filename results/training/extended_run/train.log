@@ -1,0 +1,43 @@
+Device: cuda
+Training samples: 5355 | Validation samples: 945 (64×64)
+Split file: /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/data/train/val_split.npz (seed=42, val_fraction=0.15)
+--- Kink-weighted loss ---
+  lambda_kink:              100.0
+  kink_radius_frac:         0.05 (0.0707 abs, 5.0% diagonal)
+  mean kink free-pixel frac: 0.00569 (train set)
+  loss = whole_relL2 + lambda_kink * near_kink_relL2
+  effective kink term weight ≈ lambda * frac = 0.569 (vs 1.0 for whole-domain term at unit loss)
+--- Learning rate schedule ---
+  Initial LR:           1.000000e-03
+  Decay gamma:          0.97
+  Decay every:          3350 steps (~10 epochs, 335 steps/epoch)
+  Expected decay events over 500 epochs: 50
+  Estimated final LR:   2.180654e-04
+  LR after completing milestone epochs (computed):
+    epoch 100: 7.374241e-04  (0.7374× initial)
+    epoch 200: 5.437943e-04  (0.5438× initial)
+    epoch 300: 4.010071e-04  (0.4010× initial)
+    epoch 400: 2.957123e-04  (0.2957× initial)
+    epoch 500: 2.180654e-04  (0.2181× initial)
+--- Early stopping ---
+  Monitor:              val_kink_loss
+  Patience:             40 epochs without improvement
+Epoch    1/500  train whole=0.5635 kink=0.5097 total=51.5329  val whole=0.5597 kink=0.4636 total=46.9151
+Early stopping at epoch 48: val_kink has not improved for 40 epochs (best=0.446778 at epoch 8)
+Saved final checkpoint to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/checkpoints/extended_run/fno_final_500ep.pt
+Saved best combined-val checkpoint to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/checkpoints/extended_run/fno_best_val.pt
+Best combined and best kink checkpoints coincide at epoch 8
+Saved loss log to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/results/training/extended_run/loss_log.csv
+Saved loss curve to /home/jordan/Documents/Fundamental Research in Deep Learning/control_dataset/results/training/extended_run/loss_curve.png
+--- Training summary ---
+lambda_kink used: 100.0  (effective weight ≈ 0.569)
+Final train whole / kink / total:  0.428966 / 0.086858 / 9.114752
+Final val whole / kink / total:    0.431890 / 0.589807 / 59.412550
+Best val combined: 45.150564 (epoch 8)
+Best val kink:     0.446778 (epoch 8)
+Early stopping:    triggered at epoch 48
+Late val_kink dip: no — no epoch after 20 with val_kink below epoch-20 value (0.507014)
+Train kink loss epoch 1 → 48: 0.509694 → 0.086858 (decreasing)
+Final learning rate: 8.852928e-04  (4 decay events)
+Best validation combined total epoch (8) is 40 epochs before the final epoch (48) — validation likely worsened well before training ended.
+Best validation kink-only epoch (8) is 40 epochs before the final epoch (48) — validation likely worsened well before training ended.

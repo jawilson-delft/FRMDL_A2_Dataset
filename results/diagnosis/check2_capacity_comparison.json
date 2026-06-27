@@ -1,0 +1,38 @@
+{
+  "description": "Sequential gated diagnostic CHECK 2: whole-domain structure audit on same test samples (theta=180,150,120,90,60,30,10, sample_idx=0, res=512)",
+  "metrics": {
+    "r": "mean Pearson r over all free pixels (aggregate.mean_r_free_all)",
+    "range": "mean pred_range_away over samples (away-from-everything region)",
+    "std_ratio": "mean std_ratio_away_pct over samples (pred_std/gt_std in away region, percent)"
+  },
+  "checkpoints": {
+    "baseline": {
+      "path": "checkpoints/fno_best_val_kink.pt",
+      "r": 0.4454519370836871,
+      "range": 0.17962314128875732,
+      "std_ratio_pct": 19.45805874876427,
+      "audit_json": "results/diagnosis/check2_fno_best_val_kink.pt/whole_domain_structure_audit.json"
+    },
+    "reduced_capacity": {
+      "path": "checkpoints/reduced_capacity/fno_best_val_kink.pt",
+      "r": 0.437,
+      "range": 0.3199,
+      "std_ratio_pct": 35.4,
+      "audit_json": "results/diagnosis/check2_reduced_capacity/whole_domain_structure_audit.json"
+    },
+    "modes32": {
+      "path": "checkpoints/modes32/fno_best_val_kink.pt",
+      "r": 0.418,
+      "range": 0.2580,
+      "std_ratio_pct": 27.8,
+      "audit_json": "results/diagnosis/check2_modes32/whole_domain_structure_audit.json"
+    }
+  },
+  "pattern": "NO DIFFERENCE ACROSS CAPACITY",
+  "notes": [
+    "modes32 does not show meaningfully better correlation than baseline (0.418 vs 0.445); slightly worse.",
+    "reduced_capacity has highest away-region pred range (0.32) and std_ratio (35.4%) but similar r (0.437).",
+    "All three checkpoints show weak whole-domain correlation (r~0.42-0.45) and narrow pred range vs GT.",
+    "CHECK 3 skipped: CHECK 2 conclusive that capacity sweeps do not fix whole-domain structure."
+  ]
+}
