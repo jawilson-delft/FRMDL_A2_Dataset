@@ -77,6 +77,7 @@ Loss: relative L2, \(\| \hat V - V \|_2 / \| V \|_2\).
 - Fixed seed (`--seed 42`) for dataset generation
 - Each sample stores full polygon vertices, θ, pose, scale, and goal
 - Occupancy and FMM solutions are regenerated independently at each resolution (no upsampling)
+- RTX A2000 4 GB
 
 ## Citation
 
